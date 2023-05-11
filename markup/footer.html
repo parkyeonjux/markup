@@ -7,35 +7,42 @@
     <title>Document</title>
 </head>
 <style>
-    article{
-        min-height: 100%;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-    }
     footer {
-        display: flex;
-        justify-content: center;
-        padding: 3px;
-        background-color: blue;
-        color: #fff;
+        width: 100%;
+        height: 110px;
+        bottom: 0px;
+        position: absolute;
+        border-top: 1px solid #c4c4c4;
+        padding: 15px 15px; 
+        color: #808080;
+        font-size: 11px; 
+        background-color: rgb(235, 235, 226);
     }
+    footer a {
+        display: inline-block;
+        margin: 0 20px 10px 20px;
+        color: #808080; 
+        font-size: 10px; 
+        text-decoration-line: none;
+    }
+    footer a:visited {
+        color: #808080;
+    }
+
 </style>
 <body>
-    <article>
-	<h1>김치볶음밥 만드는 방법</h1>
-	<ol>
-		<li>팬에 식용유를 두르고 대파, 김치 중불에 볶기</li>
-		<li>진간장 1술, 설탕 1술, 고춧가루 1술 넣고 볶기</li>
-		<li>밥과 김치 양념 섞고 치즈 올려 녹이기</li>
-	</ol>
-<footer>
-	<p> © 2023 요리사 </p>
-	<p> 관련 문서 : cookbook </p>
-<footer>
-</article>
-
-
-
-
+    <footer>
+        <nav>
+            <a href="http://semantic.com" target="_blank">Blog</a> |
+            <a href="http://github.com" target="_blank">Github</a> |
+            <a href="http://instagram.com" target="_blank">Instagram</a>
+        </nav>
+        <address>
+          주소 : 서울 특별시 강남구<br>
+          전화번호 : 02-321-1234 <br> 
+          이메일 : semantic@markup.com
+        </address>
+      <p> &copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
 </body>
 </html>
