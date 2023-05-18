@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+ div{
+    display: block;
+ }
+.menu_wrap{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+form{
+    display: block;
+}
+.login_wrap {
+    padding: 0 20px;
+    width: 100%;
+    box-sizing:border-box;
+    margin: 0 auto; 
+    border: 1px solid #e5e5e5;
+}
+ul {
+    display: block;
+    list-style: none;
+
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.menu_item {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+}
+
+</style>
+
+</head>
+<body>
+    
+        <div class="login_wrap">
+            <ul class="menu_wrap" role="tablist">
+                <li class="menu_item" role="presentation">
+                    <a href="#none" id="loinid" class="menu_id on" role="tab">
+                    <span>구매회원가입</span> 
+                    </a>
+                </li>
+                <li class="menu_item" role="presentation">
+                    <a href="#none" id="loinid" class="menu_id on" role="tab">
+                    <span>구매회원가입</span> 
+                    </a>
+                </li>
+            </ul>
+
+            <form>
+                <div> 
+                <label for="name">아이디:</label>
+                <input type="text" id="name">
+                </div>
+                <div> 
+                    <label for="c">비밀번호:</label>
+                    <input type="password" id="c">
+             </div>
+                 <div> 
+                        <label for="d">비밀번호 확인:</label>
+                        <input type="password" id="d">
+                </div>
+                <div>
+                    <label for="b">휴대번호</label>
+                    <select id="b">
+                        <option>010</option>
+                        <option>011</option>
+                    </select>    
+                    <input type="tel" id="b">
+                    <input type="tel" id="b">
+                </div>
+                </form>
+
+        </div>
+
+        <div>
+        <input type="checkbox" id="a">
+        <label for="a">호두샵의 <strong>이용약관</strong>및 개인정보처리방침에 대한 내용을 확인하였고 동의합니다.</label>
+       
+        </div>
+        <button type="submit">가입하기</button>
+    
+
+
+</body>
+</html>
