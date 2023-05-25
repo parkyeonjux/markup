@@ -47,57 +47,77 @@ ul {
 
 </head>
 <body>
-    
-        <div class="login_wrap">
-            <nav>
-            <ul class="menu_wrap" role="tablist">
-                <li class="menu_item" role="presentation">
-                    <a href="#none" id="loinid" class="menu_id on" role="tab">
-                    <span>구매회원가입</span> 
-                    </a>
-                </li>
-                <li class="menu_item" role="presentation">
-                    <a href="#none" id="loinid" class="menu_id on" role="tab">
-                    <span>구매회원가입</span> 
-                    </a>
-                </li>
-            </ul>
-            </nav>
-
-            <form>
-                <div> 
-                <label for="name">아이디:</label>
-                <input type="text" id="name">
-                </div>
-                <div> 
-                    <label for="c">비밀번호:</label>
-                    <input type="password" id="c">
-             </div>
-                 <div> 
-                        <label for="d">비밀번호 확인:</label>
-                        <input type="password" id="d">
-                </div>
-                <div>
-                    <label for="b">휴대번호</label>
-                    <select id="b">
-                        <option>010</option>
-                        <option>011</option>
-                    </select>    
-                    <input type="tel" id="b">
-                    <input type="tel" id="b">
-                </div>
-                </form>
-
-        </div>
-
-        <div>
-        <input type="checkbox" id="a">
-        <label for="a">호두샵의 <strong>이용약관</strong>및 개인정보처리방침에 대한 내용을 확인하였고 동의합니다.</label>
-       
-        </div>
-        <button type="submit">가입하기</button>
-    
-
-
-</body>
-</html>
+    <header>
+      <h1>
+        <a href="http://www.example.com/home">
+          <img src="./img/Logo-hodu.png" alt="HODU">
+        </a>
+      </h1>
+    </header>
+    <main>
+      <div class="login_wrap">
+        <nav>
+          <ul class="menu_wrap" role="tablist">
+            <li class="menu_item" role="presentation">
+              <a href="#none" id="lointab_buy" role="tab">
+                <span>구매회원가입</span>
+              </a>
+            </li>
+            <li class="menu_item" role="presentation">
+              <a href="#none" id="lointab_sale" role="tab">
+                <span>판매회원가입</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <form id="loginform">
+          <div>
+            <label for="login_id">아이디</label>
+            <input type="text" id="login_id">
+            <button>중복확인</button>
+          </div>
+          <div>
+            <label for="login_pw">비밀번호</label>
+            <input type="password" id="login_pw">
+          </div>
+          <div>
+            <label for="login_pw_confirm">비밀번호 확인</label>
+            <input type="password" id="login_pw_confirm">
+          </div>
+          <div>
+            <label for="login_name">이름</label>
+            <input type="text" id="login_name">
+          </div>
+          <div>
+            <label for="login_phonenum">휴대폰번호</label>
+            <select id="login_phonenum">
+              <option>010</option>
+              <option>011</option>
+              <option>016</option>
+              <option>017</option>
+              <option>018</option>
+              <option>019</option>
+            </select>
+            <input type="tel" id="login_phonenum">
+            <input type="tel" id="login_phonenum">
+          </div>
+          <div>
+            <label for="login_corporateid">사업자 등록번호</label>
+            <input type="text" id="login_corporateid">
+            <button>인증</button>
+          </div>
+          <div>
+            <label for="login_storename">스토어이름</label>
+            <input type="text" id="login_storename">
+          </div>
+          <div>
+            <input type="checkbox" id="check_click">
+            <label for="check_click">호두샵의 <strong>이용약관</strong>및 <strong>개인정보처리방침</strong>에 대한 내용을 확인하였고 동의합니다.</label>
+          </div>
+          <div>
+            <button type="submit">가입하기</button>
+          </div>
+        </form>
+      </div>
+    </main>
+        
